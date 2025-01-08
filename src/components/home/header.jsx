@@ -11,6 +11,7 @@ const Header = () => {
                 src="/assets/images/logo.svg"
                 fill
                 className="object-contain"
+                alt="icon"
               />
             </div>
             <span className="ml-3 text-2xl font-normal">Bot Kernel</span>
@@ -26,6 +27,7 @@ const Header = () => {
                 src="/assets/icons/linkedin-icon.svg"
                 fill
                 className="object-contain"
+                alt="icon"
               />
             </div>
             <button className="border px-4 rounded-[30px] font-semibold p-3 text-sm text-[#7c2a88] border-[#490852]">
