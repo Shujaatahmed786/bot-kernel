@@ -12,9 +12,9 @@ const services = () => {
         >
           We offer
         </h1>
-        <h2 className="text-[#490852] font-bold leading-normal text-[32px] xl:text-[48px]  text-center">
+        <h1 className="text-[#490852] font-bold leading-normal text-[32px] xl:text-[48px]  text-center">
           Our Services
-        </h2>
+        </h1>
         <p className="mt-4 text-center text-[20px] p-4 md:p-2">
           Learn more about our areas of expertise and see how our specialised
           services <br />
@@ -34,7 +34,7 @@ const services = () => {
               {
                 <Image
                   src={service.src}
-                  alt={service.text}
+                  alt="icon"
                   width={85}
                   height={85}
                   className="mx-auto"

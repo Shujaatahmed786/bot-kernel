@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 const Scenarios = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const visibleCards = 3; // Number of cards to show on large screens
+  const visibleCards = 3;
 
   useEffect(() => {
     const autoSlide = () => {
@@ -14,7 +14,7 @@ const Scenarios = () => {
       setCurrentIndex(nextIndex);
     };
 
-    const intervalId = setInterval(autoSlide, 5000); // Slide every 5 seconds
+    const intervalId = setInterval(autoSlide, 5000);
 
     return () => {
       clearInterval(intervalId);
@@ -22,9 +22,8 @@ const Scenarios = () => {
   }, [currentIndex, use.length]);
 
   const getVisibleCards = () => {
-    // Show visibleCards number of items on lg screens
     if (use.length <= visibleCards) {
-      return use; // Show all if fewer cards than visibleCards
+      return use;
     }
     return [
       ...use.slice(currentIndex, currentIndex + visibleCards),
@@ -46,7 +45,7 @@ const Scenarios = () => {
         <h2 className="text-[#490852] font-bold leading-normal text-[32px] xl:text-[48px] text-center">
           Use Cases
         </h2>
-        <p className="mt-4 mx-auto text-center text-[20px] max-w-[45rem] w-full">
+        <p className="font-normal mt-4  mx-auto text-center text-[20px] max-w-[45rem] w-full">
           We’re our partner’s biggest fans. Check out some of the cool digital
           products we’ve built together!
         </p>
@@ -56,16 +55,15 @@ const Scenarios = () => {
           {visibleItems.map((cases, index) => (
             <div
               key={index}
-              className={`border rounded-2xl flex flex-col bg-[#fcfcfc] max-w-[15rem] w-full gap-2 p-4 items-center text-center cursor-pointer transition-transform duration-500 ease-in-out transform ${
+              className={`border rounded-2xl flex flex-col bg-[#fcfcfc] max-w-full md:max-w-[20rem] w-full gap-2 p-4 items-center text-center cursor-pointer transition-transform duration-500 ease-in-out transform ${
                 index === currentIndex ? "scale-110" : "scale-100"
               }`}
             >
-              <div>
+              <div className="relative w-80 h-80">
                 <Image
                   src={cases.src}
                   alt="icon"
-                  width={185}
-                  height={185}
+                  fill
                   className="object-cover"
                 />
               </div>

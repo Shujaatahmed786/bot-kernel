@@ -13,10 +13,10 @@ const heroSection = () => {
             Think Partner, <br />
             Not Agency
           </h1>
-          <p className="max-w-[390px] w-full leading-[32px] mt-4 font-normal text-xs md:text-base">
+          <h2 className="max-w-[390px] w-full leading-[32px] mt-4 font-normal text-xs md:text-base">
             We implement AI based solutions for growing companies in Canada &
             USA. We are based in Toronto and ready to Make It App’n!®
-          </p>
+          </h2>
         </div>
         <div>
           <button className="text-white bg-[#a8ca55] text-sm md:text-lg font-bold py-[15px] px-[50px] mt-6 rounded-[30px]">

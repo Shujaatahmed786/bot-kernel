@@ -5,6 +5,7 @@ import Services from "./services";
 import Scenarios from "./scenarios";
 import Team from "./team";
 import Footer from "./footer";
+import TechStack from "./techStack";
 
 const index = () => {
   return (
@@ -16,6 +17,7 @@ const index = () => {
         <Services />
         <Scenarios />
         <Team />
+        <TechStack />
         <Footer />
       </div>
     </div>
