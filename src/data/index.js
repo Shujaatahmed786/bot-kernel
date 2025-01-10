@@ -71,4 +71,32 @@ export const computerVision = [
     title: "Occupancy Monitoring",
     para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
   },
+  {
+    title: "Perimeter Surveillance Watchdog",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+  {
+    title: "Invoice Tracker Pro",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+  {
+    title: "Staff Attendance",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+  {
+    title: "Parking Management",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+  {
+    title: "Instant brand detective!",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+  {
+    title: "AI Doctor of Radiology",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+  {
+    title: "Transforming retail intelligence!",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
 ];
