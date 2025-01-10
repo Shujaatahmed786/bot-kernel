@@ -7,12 +7,12 @@ const ProductsSection = () => {
       <div>
         <h1
           className="bg-[#fef4ff] mx-auto text-[#ac81b3] text-center p-2
-         text-xs font-semibold max-w-32 mb-4  rounded-lg mt-8
+         text-xs font-semibold max-w-32 mb-4  rounded-sm mt-8
           w-full"
         >
           What we propose
         </h1>
-        <h1 className="text-[#490852] font-bold leading-normal text-[32px] xl:text-[38px]  text-center">
+        <h1 className="text-[#490852] font-bold leading-normal text-[32px]   text-center">
           Products
         </h1>
         <p className="mt-4 text-center text-base mb-14">

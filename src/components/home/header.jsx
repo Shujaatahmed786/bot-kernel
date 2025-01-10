@@ -33,7 +33,17 @@ const Header = () => {
             </Link>
             <Link href={"/"}>
               {" "}
-              <h2 className="hover:text-[#99bf3e] cursor-pointer">Product</h2>
+              <h2 className="hover:text-[#99bf3e] cursor-pointer flex items-center gap-1">
+                Product{" "}
+                <span>
+                  <Image
+                    src="/assets/icons/down-arrow.svg"
+                    width={8}
+                    height={8}
+                    alt="icon"
+                  />{" "}
+                </span>{" "}
+              </h2>
             </Link>
             <Link href={"/cases"}>
               {" "}
@@ -45,20 +55,27 @@ const Header = () => {
                 Our Process
               </h2>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/contactUs"}>
               {" "}
               <h2 className="hover:text-[#99bf3e] cursor-pointer">
                 Contact Us
               </h2>
             </Link>
-            <div className="relative w-[30px] h-[30px]">
-              <Image
-                src="/assets/icons/linkedin-icon.svg"
-                fill
-                className="object-contain"
-                alt="icon"
-              />
-            </div>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative w-[30px] h-[30px]">
+                <Image
+                  src="/assets/icons/linkedin-icon.svg"
+                  fill
+                  className="object-contain cursor-pointer"
+                  alt="LinkedIn Icon"
+                />
+              </div>
+            </a>
+
             <button className="border px-4 rounded-[30px] font-semibold p-3 text-sm text-[#7c2a88] border-[#490852]">
               Book a meeting
             </button>
@@ -94,12 +111,13 @@ const Header = () => {
           >
             Product
           </a>
-          <a
+          <Link
+            href={"/cases"}
             className="hover:text-[#99bf3e] cursor-pointer"
             onClick={toggleMenu}
           >
             Use Cases
-          </a>
+          </Link>
           <a
             className="hover:text-[#99bf3e] cursor-pointer"
             onClick={toggleMenu}

@@ -1,5 +1,11 @@
+import HeroSection from "@/src/shared/heroSection";
+
 const index = () => {
-  return <div>index</div>;
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 };
 
 export default index;

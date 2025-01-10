@@ -42,10 +42,10 @@ const Scenarios = () => {
         >
           Blog
         </h1>
-        <h2 className="text-[#490852] font-bold leading-normal text-[32px] xl:text-[48px] text-center">
+        <h2 className="text-[#490852] font-bold leading-normal text-[32px]  text-center">
           Use Cases
         </h2>
-        <p className="font-normal mt-4  mx-auto text-center text-[20px] max-w-[45rem] w-full">
+        <p className=" mt-4  mx-auto text-center text-sm max-w-[35rem] w-full">
           We’re our partner’s biggest fans. Check out some of the cool digital
           products we’ve built together!
         </p>
