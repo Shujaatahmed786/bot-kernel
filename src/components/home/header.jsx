@@ -5,9 +5,18 @@ import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -31,8 +40,11 @@ const Header = () => {
             <Link href={"/"}>
               <h2 className="hover:text-[#99bf3e] cursor-pointer">Home</h2>
             </Link>
-            <Link href={"/"}>
-              {" "}
+            <div
+              className="relative"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <h2 className="hover:text-[#99bf3e] cursor-pointer flex items-center gap-1">
                 Product{" "}
                 <span>
@@ -41,22 +53,33 @@ const Header = () => {
                     width={8}
                     height={8}
                     alt="icon"
-                  />{" "}
-                </span>{" "}
+                  />
+                </span>
               </h2>
-            </Link>
+              {isDropdownOpen && (
+                <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-md rounded-md">
+                  <Link href={"/product/option1"}>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      Option 1
+                    </a>
+                  </Link>
+                  <Link href={"/product/option2"}>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      Option 2
+                    </a>
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href={"/cases"}>
-              {" "}
               <h2 className="hover:text-[#99bf3e] cursor-pointer">Use Cases</h2>
             </Link>
             <Link href={"/"}>
-              {" "}
               <h2 className="hover:text-[#99bf3e] cursor-pointer">
                 Our Process
               </h2>
             </Link>
             <Link href={"/contactUs"}>
-              {" "}
               <h2 className="hover:text-[#99bf3e] cursor-pointer">
                 Contact Us
               </h2>

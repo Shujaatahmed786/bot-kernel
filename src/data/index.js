@@ -65,3 +65,10 @@ export const product = [
     para: "Analyse & understand your data with powerful LLM that provides insightful recommendations to improve your business processes & decision-making.",
   },
 ];
+
+export const computerVision = [
+  {
+    title: "Occupancy Monitoring",
+    para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
+  },
+];
