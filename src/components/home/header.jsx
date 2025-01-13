@@ -1,11 +1,17 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false); // To check if it's running on the client
+
+  // Ensure dropdown rendering happens only after the component is mounted
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,7 +29,10 @@ const Header = () => {
     <div>
       <header className="text-black body-font flex justify-center">
         <div className="flex p-4 max-w-[88rem] w-full justify-between md:justify-around items-center">
-          <a className="flex title-font font-medium items-center ">
+          <Link
+            href={"/"}
+            className="flex title-font cursor-pointer font-medium items-center "
+          >
             <div className="relative w-10 h-10">
               <Image
                 src="/assets/images/logo.svg"
@@ -35,7 +44,7 @@ const Header = () => {
             <span className="hidden md:block ml-3 text-2xl font-normal">
               Bot Kernel
             </span>
-          </a>
+          </Link>
           <nav className="hidden md:flex gap-5 flex-wrap items-center text-sm font-semibold">
             <Link href={"/"}>
               <h2 className="hover:text-[#99bf3e] cursor-pointer">Home</h2>
@@ -56,7 +65,8 @@ const Header = () => {
                   />
                 </span>
               </h2>
-              {isDropdownOpen && (
+              {/* Render dropdown only after client-side mounting */}
+              {isClient && isDropdownOpen && (
                 <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-md rounded-md">
                   <Link href={"/product/option1"}>
                     <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -74,7 +84,7 @@ const Header = () => {
             <Link href={"/cases"}>
               <h2 className="hover:text-[#99bf3e] cursor-pointer">Use Cases</h2>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/process"}>
               <h2 className="hover:text-[#99bf3e] cursor-pointer">
                 Our Process
               </h2>
@@ -122,18 +132,20 @@ const Header = () => {
         } md:hidden`}
       >
         <div className="p-4 flex flex-col gap-4 items-center text-sm font-semibold">
-          <a
+          <Link
+            href={"/"}
             className="hover:text-[#99bf3e] cursor-pointer"
             onClick={toggleMenu}
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
+            href={"/"}
             className="hover:text-[#99bf3e] cursor-pointer"
             onClick={toggleMenu}
           >
             Product
-          </a>
+          </Link>
           <Link
             href={"/cases"}
             className="hover:text-[#99bf3e] cursor-pointer"
@@ -141,18 +153,20 @@ const Header = () => {
           >
             Use Cases
           </Link>
-          <a
+          <Link
+            href={"/process"}
             className="hover:text-[#99bf3e] cursor-pointer"
             onClick={toggleMenu}
           >
             Our Process
-          </a>
-          <a
+          </Link>
+          <Link
+            href={"/contactUs"}
             className="hover:text-[#99bf3e] cursor-pointer"
             onClick={toggleMenu}
           >
             Contact Us
-          </a>
+          </Link>
           <button
             className="border px-4 rounded-[30px] font-semibold p-3 text-sm text-[#7c2a88] border-[#490852]"
             onClick={toggleMenu}

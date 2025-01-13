@@ -100,3 +100,71 @@ export const computerVision = [
     para: "Our visual recognition software was implemented without any hardware upgrades - and now delivers 99% accuracy in monitoring capacity.",
   },
 ];
+
+export const developmentCases = [
+  {
+    title: "My Pocket Physiotherapist",
+    para: "An individual using the app can choose from a detailed list of pain points and symptoms, or highlight them on a body map, and the app will create a suggested movement plan.",
+  },
+  {
+    title: "My Pocket Physiotherapist",
+    para: "An individual using the app can choose from a detailed list of pain points and symptoms, or highlight them on a body map, and the app will create a suggested movement plan.",
+  },
+  {
+    title: "My Pocket Physiotherapist",
+    para: "An individual using the app can choose from a detailed list of pain points and symptoms, or highlight them on a body map, and the app will create a suggested movement plan.",
+  },
+  {
+    title: "My Pocket Physiotherapist",
+    para: "An individual using the app can choose from a detailed list of pain points and symptoms, or highlight them on a body map, and the app will create a suggested movement plan.",
+  },
+];
+
+export const naturalLanguageProcessing = [
+  {
+    title: "Customer Service Bot",
+    para: "We all know how important customer support is and how much of a strain it can be on growing businesses. Our trained bots engage with customers using natural language processing to provide quick and accurate answers, filtering through redundant questions so your team could focus on more critical issues.",
+  },
+  {
+    title: "Knowledge Retention System",
+    para: "We all know how important customer support is and how much of a strain it can be on growing businesses. Our trained bots engage with customers using natural language processing to provide quick and accurate answers, filtering through redundant questions so your team could focus on more critical issues.",
+  },
+];
+
+export const predictiveAnalytics = [
+  {
+    title: "Retail Forecast",
+    para: "The system delivers accurate answers to complex questions in natural language. The system also retrieves specific information from large scale documents all with the ease of asking questions.",
+  },
+];
+
+export const process = [
+  {
+    title: "Discovery & Documentation",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+  {
+    title: "Wire-framing",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+  {
+    title: "High-Fidelities",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+  {
+    title: "Product Flows & Prototyping",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+  {
+    title: "Programming Your Application",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+  {
+    title: "Quality Assurance",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+  {
+    title: "Getting You Ready For Launch",
+    para: "We carefully scope out your digital product from start-to-finish by defining all of the design and development requirements. This part of our process is very collaborative, and it happens before any contract is signed. We want to ensure you feel 100% confident before moving forward with us, and that you’ll receive everything you’ve asked for — and the things you didn’t know to ask for. We’ll work with you to optimize your budget and timeline based on the features and functionality that are most important to bring your idea to life. Everything we lay out together here sets the stage for Phase Two.",
+  },
+];
